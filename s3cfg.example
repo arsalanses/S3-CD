@@ -1,0 +1,13 @@
+[default]
+
+# Login credentials
+
+access_key = example
+
+secret_key = example
+
+host_base = https://example.com
+
+host_bucket = https://example.com
+
+use_https = True

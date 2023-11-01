@@ -1,0 +1,8 @@
+deploy:
+  script:
+    - apt update -qy
+    - apt install -y s3cmd
+    - s3cmd --config=./s3cfg sync ./index.html s3://gitlab/
+    - /bin/bash ./script.sh
+  tags:
+    - all
